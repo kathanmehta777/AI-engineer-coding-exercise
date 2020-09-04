@@ -1,4 +1,4 @@
-# AI engineer coding exercise
+# Remote-sensing AI engineer coding exercise
 
 ## Image registration
 
