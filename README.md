@@ -1,6 +1,6 @@
 # AI engineer coding exercise
 
-## Remote sensing: image registration
+## Image registration
 
 1. Install OTB in a linux box https://www.orfeo-toolbox.org/CookBook/Installation.html#linux 
 1. Orthorectify a WV3 image 
