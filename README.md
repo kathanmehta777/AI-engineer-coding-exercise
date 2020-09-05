@@ -18,6 +18,6 @@
 * Mask generation using a criteria (brightness)
 * Normalized ratio?
 
-# ML
+## ML
 * Linear regression
 * Dimension reduction
