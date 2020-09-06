@@ -4,7 +4,7 @@ Please write your code in a public repository using a version control system (gi
 
 ## Numpy, GDAL
 
-1. Install numpy and gdal using conda or pip
+1. Install numpy and gdal using conda/pip/...
 1. Open a jupyter notebook session or any python session with access to installed numpy and gdal
 1. Load data of all bands from ./data/ortho/swir_ortho_standardized.tif to a numpy array using gdal. The loaded numpy array should have a shape of (8, 653, 502)
    * Use `ds = gdal.Open(path)` to open a dataset
