@@ -12,7 +12,7 @@ Please write your code in a public repository using a version control system (gi
    * 653 is number of rows, 502 is number of columns, 8 is number of bands. For each pixel, the data in the 8 bands forms a spectrum for that pixel.
 1. Load the "facility spectrum" numpy array from [facility_spectrum_standardized.npy](./data/facility_spectrum_standardized.npy?raw=true) using `np.load`
 1. Calculate the cosine similarity of the spectra of all pixels with the given "facility spectrum" loaded in the previous step using `np.dot`, and save the output as an array of shape (653, 502), matching the input image
-1. Plot the cosine similarity using matplotlib
+1. Plot the cosine similarity using matplotlib and save the plot to an image
 1. Use 0.995 as the threshold, create a mask array where pixels with cosine similarity > threshold are labeled with value 1, and other pixels labeled with value 0
 
 ## Image registration
