@@ -31,5 +31,7 @@ Please write your code in a public repository using a version control system (gi
 
 
 ## ML
-* Linear regression
-* Dimension reduction
+1. Load training data from ./data/ml/train_swir_nr.npy (X) and ./data/ml/train_concentration.npy (y). X has 28 features
+1. Fit X to y
+1. Predict y_test from test data ./data/ml/test_swir_nr.npy (Xtest) and save it as a numpy array
+1. Is there a way to reduce the number of features? Discuss and code.
