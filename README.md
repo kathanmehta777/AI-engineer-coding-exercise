@@ -30,7 +30,7 @@ Please write your code in a public repository using a version control system (gi
 1. Write a test function for the new python function you created in the last step
 
 
-## ML
+## Linear regression
 1. Load training data from [train_swir_nr.npy](./data/ml/train_swir_nr.npy?raw=true) (X) and [train_concentration.npy](./data/ml/train_concentration.npy?raw=true) (y). X has 28 features
 1. Fit X to y
 1. Predict y_test from test data [test_swir_nr.npy](./data/ml/test_swir_nr.npy?raw=true) (Xtest) and save it as a numpy array
