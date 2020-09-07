@@ -13,7 +13,7 @@ Please write your code in a public repository using a version control system (gi
 1. Load the "facility spectrum" numpy array from [facility_spectrum_standardized.npy](./data/facility_spectrum_standardized.npy?raw=true) using `np.load`
 1. Calculate the cosine similarity of the spectra of all pixels with the given "facility spectrum" loaded in the previous step using `np.dot`, and save the output as an array of shape (653, 502), matching the input image
 1. Plot the cosine similarity using matplotlib and save the plot to an image
-1. Use 0.995 as the threshold, create a mask array where pixels with cosine similarity > threshold are labeled with value 1, and other pixels labeled with value 0
+1. Use 0.995 as the threshold, create a mask array where pixels with cosine similarity > threshold are labeled with value 1, and other pixels labeled with value 0. Plot the mask and save it to an image
 
 ## Image registration
 
@@ -35,3 +35,4 @@ Please write your code in a public repository using a version control system (gi
 1. Fit X to y
 1. Predict y_test from test data [test_swir_nr.npy](./data/ml/test_swir_nr.npy?raw=true) (Xtest) and save it as a numpy array
 1. Is there a way to reduce the number of features? Discuss and code.
+1. Record your solution in a jupyter notebook or a python script
