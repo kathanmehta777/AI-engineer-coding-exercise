@@ -15,6 +15,13 @@ Please write your code in a public repository using a version control system (gi
 1. Plot the cosine similarity using matplotlib and save the plot to an image
 1. Use 0.995 as the threshold, create a mask array where pixels with cosine similarity > threshold are labeled with value 1, and other pixels labeled with value 0. Plot the mask and save it to an image
 
+## Linear regression
+1. Load training data from [train_swir_nr.npy](./data/ml/train_swir_nr.npy?raw=true) (X) and [train_concentration.npy](./data/ml/train_concentration.npy?raw=true) (y). X has 28 features
+1. Fit X to y
+1. Predict y_test from test data [test_swir_nr.npy](./data/ml/test_swir_nr.npy?raw=true) (Xtest) and save it as a numpy array
+1. Is there a way to reduce the number of features? Discuss and code.
+1. Record your solution in a jupyter notebook or a python script
+
 ## Image registration
 
 1. Install OTB in a linux box https://www.orfeo-toolbox.org/CookBook/Installation.html#linux 
@@ -28,11 +35,3 @@ Please write your code in a public repository using a version control system (gi
    * Save the output file in your repository
 1. Wrap the orthorectification procedure in a python function
 1. Write a test function for the new python function you created in the last step
-
-
-## Linear regression
-1. Load training data from [train_swir_nr.npy](./data/ml/train_swir_nr.npy?raw=true) (X) and [train_concentration.npy](./data/ml/train_concentration.npy?raw=true) (y). X has 28 features
-1. Fit X to y
-1. Predict y_test from test data [test_swir_nr.npy](./data/ml/test_swir_nr.npy?raw=true) (Xtest) and save it as a numpy array
-1. Is there a way to reduce the number of features? Discuss and code.
-1. Record your solution in a jupyter notebook or a python script
