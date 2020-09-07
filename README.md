@@ -19,11 +19,13 @@ Please write your code in a public repository using a version control system (gi
 
 1. Install OTB in a linux box https://www.orfeo-toolbox.org/CookBook/Installation.html#linux 
 1. Orthorectify a WV3 image 
+   * Command: `otbcli_OrthoRectification`
    * Instruction: https://www.orfeo-toolbox.org/CookBook/Applications/app_OrthoRectification.html
    * Inputs
      * WV3 image: [pan.tif](./data/pan/pan.tif?raw=true)
      * DEM data: [dem data folder](./data/dem/)
      * Interpolation: use "nn"
+   * Save the output file in your repository
 1. Wrap the orthorectification procedure in a python function
 1. Write a test function for the new python function you created in the last step
 
