@@ -6,7 +6,7 @@ Please write your code in a public repository using a version control system (gi
 
 ## Numpy, GDAL
 
-1. Install gdal using conda/pip/...
+1. Install gdal (version>=3) using conda/pip/...
 1. Open a jupyter notebook session or any python session with access to installed gdal
 1. Load data of all bands from [swir_ortho_standardized.tif](./data/ortho/swir_ortho_standardized.tif?raw=true) to a numpy array using gdal. The loaded numpy array should have a shape of (8, 653, 502)
    * Use `ds = gdal.Open(path)` to open a dataset
@@ -26,7 +26,7 @@ Please write your code in a public repository using a version control system (gi
 
 ## Image registration
 
-1. Install OTB in a linux box https://www.orfeo-toolbox.org/CookBook/Installation.html#linux 
+1. Install OTB (version>=6.6) in a linux box https://www.orfeo-toolbox.org/CookBook/Installation.html#linux 
 1. Orthorectify a WV3 image 
    * Command: `otbcli_OrthoRectification`
    * Instruction: https://www.orfeo-toolbox.org/CookBook/Applications/app_OrthoRectification.html
