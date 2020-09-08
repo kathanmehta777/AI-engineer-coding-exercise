@@ -1,6 +1,6 @@
 # Remote-sensing AI engineer coding exercise
 
-You are expected to have a `python` environment with `numpy`, `scikit-learn` and optionally `jupyter` installed.
+You are expected to have a `python` environment with `numpy`, `matplotlib`, `scikit-learn` and optionally `jupyter` installed.
 
 Please write your code in a public repository using a version control system (github/gitlab/bitbucket).
 
