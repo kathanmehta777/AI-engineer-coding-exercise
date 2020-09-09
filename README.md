@@ -2,13 +2,16 @@
 
 You are expected to have a `python` environment with `numpy`, `matplotlib`, `scikit-learn` and optionally `jupyter` installed.
 
-Please write your code in a public repository using a version control system (github/gitlab/bitbucket).
+Please write your code in a private repository using a version control system (git). Make a tar ball or a zip file for relevant files and submit it by email.
+
+If you have questions regarding the following instructions, please create an issue or send us an email.
 
 ## Numpy, GDAL
 
+### Part 1
 1. Install gdal (version>=3) using conda/pip/...
 1. Open a jupyter notebook session or any python session with access to installed gdal
-1. Load data of all bands from [swir_ortho_standardized.tif](./data/ortho/swir_ortho_standardized.tif?raw=true) to a numpy array using gdal. The loaded numpy array should have a shape of (8, 653, 502)
+1. Load data of all bands from [swir_ortho_standardized.tif](./data/ortho/swir_ortho_standardized.tif?raw=true) to a numpy array using gdal. The loaded numpy array should have a shape of (8, 653, 502). Hints:
    * Use `ds = gdal.Open(path)` to open a dataset
    * Use `data = ds.ReadAsArray()` to read data
    * 653 is number of rows, 502 is number of columns, 8 is number of bands. For each pixel, the data in the 8 bands forms a spectrum for that pixel.
@@ -16,6 +19,9 @@ Please write your code in a public repository using a version control system (gi
 1. Calculate the cosine similarity of the spectra of all pixels with the given "facility spectrum" loaded in the previous step using `np.dot`, and save the output as an array of shape (653, 502), matching the input image
 1. Plot the cosine similarity using matplotlib and save the plot to an image
 1. Use 0.995 as the threshold, create a mask array where pixels with `cosine_similarity > threshold` are labeled with value `1`, and other pixels labeled with value `0`. Plot the mask and save it to an image
+
+### Part 2 
+1. Instead of just one spectrum in facility_spectrum_standardized.npy, here we need to calculate cosine similarity of spectra for all pixels with 100 reference spectra saved in [ref_spectra_standardized.npy](./data/ref_spectra_standardized.npy?raw=true). The result should be a 653X502X100 numpy array. You don't need to submit the final result, but please submit your code. Does your code leverage numpy vectorized computation?
 
 ## Regression
 1. Load training data from [train_swir_nr.npy](./data/ml/train_swir_nr.npy?raw=true) (X) and [train_concentration.npy](./data/ml/train_concentration.npy?raw=true) (y). X has 28 features
