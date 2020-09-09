@@ -31,16 +31,20 @@ If you have questions regarding the following instructions, please create an iss
 1. Is there a way to reduce the number of features? Discuss and code.
 1. Record your solution in a jupyter notebook or a python script
 
-## Image registration
+## Image orthorectification
+
+* Data: s3://satelyticsweb/download/Satelytics_High_ONA_Sample_SO18013350-3-01_DS_PHR1A_201605121741085_FR1_PX_W097N35_0423_00596.zip
+* Purpose: [orthorectify the image](https://www.satimagingcorp.com/services/orthorectification/)
+
+Hints if using OTB for this exercise:
 
 1. Install OTB (version>=6.6) in a linux box https://www.orfeo-toolbox.org/CookBook/Installation.html#linux 
-1. Orthorectify a WV3 image 
-   * Command: `otbcli_OrthoRectification`
+1. Use the command `otbcli_OrthoRectification`
    * Instruction: https://www.orfeo-toolbox.org/CookBook/Applications/app_OrthoRectification.html
-   * Inputs
-     * WV3 image: [pan.tif](./data/pan/pan.tif?raw=true)
-     * DEM data: [dem data folder](./data/dem/)
-     * Interpolation: use "nn"
-   * Save the output file in your repository
+   * DEM: do not use DEM for this exercise
+   * Use the "skipcarto=true" trick
+   * Interpolation option: use "nn"
+   * Output a geotiff file
+1. Plot the orthorectified image and save it
 1. Wrap the orthorectification procedure in a python function
 1. Write a test function for the new python function you created in the last step
