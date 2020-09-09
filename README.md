@@ -4,7 +4,7 @@ You are expected to have a `python` environment with `numpy`, `matplotlib`, `sci
 
 Please write your code in a private repository using a version control system (git). Make a tar ball or a zip file for relevant files and submit it by email.
 
-If you have questions regarding the following instructions, please create an issue or send us an email.
+If you have questions regarding the following instructions, please [create an issue](https://github.com/Satelytics/AI-engineer-coding-exercise/issues/new/choose) or send us an email.
 
 ## Numpy, GDAL
 
