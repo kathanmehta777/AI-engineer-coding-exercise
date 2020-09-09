@@ -25,7 +25,7 @@ If you have questions regarding the following instructions, please [create an is
 
 ## Regression
 1. Load training data from [train_swir_nr.npy](./data/ml/train_swir_nr.npy?raw=true) (X) and [train_concentration.npy](./data/ml/train_concentration.npy?raw=true) (y). X has 28 features
-1. Fit X to y using a regression model
+1. Fit X to y using a regression model. Please explain the reason behind your choice of regressor.
 1. Make a plot of y_pred (predicted y values from your regression model) vs y
 1. Predict y_test from test data [test_swir_nr.npy](./data/ml/test_swir_nr.npy?raw=true) (Xtest) and save it as a numpy array
 1. Is there a way to reduce the number of features? Discuss and code.
