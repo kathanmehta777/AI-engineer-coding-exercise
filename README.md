@@ -2,7 +2,7 @@
 
 You are expected to have a `python` environment with `numpy`, `matplotlib`, `scikit-learn` and optionally `jupyter` installed.
 
-Please write your code in a private repository using a version control system (git). Make a tar ball or a zip file for relevant files and submit it by email.
+Please write your code in a private repository using a version control system (git). Make a tar ball or a zip file of your repository and submit it by email.
 
 If you have questions regarding the following instructions, please [create an issue](https://github.com/Satelytics/AI-engineer-coding-exercise/issues/new/choose) or send us an email.
 
