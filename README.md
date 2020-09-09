@@ -2,9 +2,9 @@
 
 You are expected to have a `python` environment with `numpy`, `matplotlib`, `scikit-learn` and optionally `jupyter` installed.
 
-Please write your code in a private repository using a version control system (git). Make a tar ball or a zip file for relevant files and submit it by email.
+Please write your code in a private repository using a version control system (git). Make a tar ball or a zip file of your repository and submit it by email.
 
-If you have questions regarding the following instructions, please create an issue or send us an email.
+If you have questions regarding the following instructions, please [create an issue](https://github.com/Satelytics/AI-engineer-coding-exercise/issues/new/choose) or send us an email.
 
 ## Numpy, GDAL
 
@@ -25,7 +25,7 @@ If you have questions regarding the following instructions, please create an iss
 
 ## Regression
 1. Load training data from [train_swir_nr.npy](./data/ml/train_swir_nr.npy?raw=true) (X) and [train_concentration.npy](./data/ml/train_concentration.npy?raw=true) (y). X has 28 features
-1. Fit X to y using a regression model
+1. Fit X to y using a regression model. Please explain the reason behind your choice of regressor.
 1. Make a plot of y_pred (predicted y values from your regression model) vs y
 1. Predict y_test from test data [test_swir_nr.npy](./data/ml/test_swir_nr.npy?raw=true) (Xtest) and save it as a numpy array
 1. Is there a way to reduce the number of features? Discuss and code.
@@ -33,7 +33,7 @@ If you have questions regarding the following instructions, please create an iss
 
 ## Image orthorectification
 
-* Data: s3://satelyticsweb/download/Satelytics_High_ONA_Sample_SO18013350-3-01_DS_PHR1A_201605121741085_FR1_PX_W097N35_0423_00596.zip
+* Data: [Satelytics_High_ONA_Sample_SO18013350-3-01_DS_PHR1A_201605121741085_FR1_PX_W097N35_0423_00596.zip](http://s3.amazonaws.com/satelyticsweb/download/Satelytics_High_ONA_Sample_SO18013350-3-01_DS_PHR1A_201605121741085_FR1_PX_W097N35_0423_00596.zip)
 * Purpose: [orthorectify the image](https://www.satimagingcorp.com/services/orthorectification/)
 
 Hints if using OTB for this exercise:
@@ -41,8 +41,9 @@ Hints if using OTB for this exercise:
 1. Install OTB (version>=6.6) in a linux box https://www.orfeo-toolbox.org/CookBook/Installation.html#linux 
 1. Use the command `otbcli_OrthoRectification`
    * Instruction: https://www.orfeo-toolbox.org/CookBook/Applications/app_OrthoRectification.html
-   * DEM: do not use DEM for this exercise
+   * Input image in the zip file: 2986325101/IMG_PHR1A_P_001/DIM_PHR1A_P_201605121741085_SEN_2986325101-1.XML
    * Use the "skipcarto=true" trick
+   * DEM: do not use DEM for this exercise
    * Interpolation option: use "nn"
    * Output a geotiff file
 1. Plot the orthorectified image and save it
