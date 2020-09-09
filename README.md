@@ -41,8 +41,9 @@ Hints if using OTB for this exercise:
 1. Install OTB (version>=6.6) in a linux box https://www.orfeo-toolbox.org/CookBook/Installation.html#linux 
 1. Use the command `otbcli_OrthoRectification`
    * Instruction: https://www.orfeo-toolbox.org/CookBook/Applications/app_OrthoRectification.html
-   * DEM: do not use DEM for this exercise
+   * Input image in the zip file: 2986325101/IMG_PHR1A_P_001/DIM_PHR1A_P_201605121741085_SEN_2986325101-1.XML
    * Use the "skipcarto=true" trick
+   * DEM: do not use DEM for this exercise
    * Interpolation option: use "nn"
    * Output a geotiff file
 1. Plot the orthorectified image and save it
