@@ -21,7 +21,7 @@ If you have questions regarding the following instructions, please create an iss
 1. Use 0.995 as the threshold, create a mask array where pixels with `cosine_similarity > threshold` are labeled with value `1`, and other pixels labeled with value `0`. Plot the mask and save it to an image
 
 ### Part 2 
-1. Instead of just one spectrum in facility_spectrum_standardized.npy, here we need to calculate cosine similarity of spectra for all pixels with 100 reference spectra saved in [ref_spectra_standardized.npy](./data/ref_spectra_standardized.npy?raw=true). The result should be a 653X502X100 numpy array. You don't need to submit the final result, but please submit your code. How fast can your code get this done?
+1. Instead of just one spectrum in facility_spectrum_standardized.npy, here we need to calculate cosine similarity of spectra for all pixels with 100 reference spectra saved in [ref_spectra_standardized.npy](./data/ref_spectra_standardized.npy?raw=true). The result should be a 653X502X100 numpy array. You don't need to submit the final result, but please submit your code. Does your code leverage numpy vectorized computation?
 
 ## Regression
 1. Load training data from [train_swir_nr.npy](./data/ml/train_swir_nr.npy?raw=true) (X) and [train_concentration.npy](./data/ml/train_concentration.npy?raw=true) (y). X has 28 features
