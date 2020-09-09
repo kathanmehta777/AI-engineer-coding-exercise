@@ -33,7 +33,7 @@ If you have questions regarding the following instructions, please [create an is
 
 ## Image orthorectification
 
-* Data: s3://satelyticsweb/download/Satelytics_High_ONA_Sample_SO18013350-3-01_DS_PHR1A_201605121741085_FR1_PX_W097N35_0423_00596.zip
+* Data: [Satelytics_High_ONA_Sample_SO18013350-3-01_DS_PHR1A_201605121741085_FR1_PX_W097N35_0423_00596.zip](http://s3.amazonaws.com/satelyticsweb/download/Satelytics_High_ONA_Sample_SO18013350-3-01_DS_PHR1A_201605121741085_FR1_PX_W097N35_0423_00596.zip)
 * Purpose: [orthorectify the image](https://www.satimagingcorp.com/services/orthorectification/)
 
 Hints if using OTB for this exercise:
